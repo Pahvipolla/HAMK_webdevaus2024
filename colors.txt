@@ -7,3 +7,6 @@ background2: #d3d0bc
 footer: #292d23
 form input bg: #e5e3d7
 form input border: #bab8aa
+
+H1 & H2 -fontti: Saira Condensed Bold (https://fonts.google.com/specimen/Saira+Condensed)
+Muut tekstit: Inter Regular ja Bold (https://fonts.google.com/specimen/Inter)
