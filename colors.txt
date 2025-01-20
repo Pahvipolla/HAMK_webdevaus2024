@@ -1,0 +1,9 @@
+teksti: #221814
+nav & footer teksti: #e5e3d7
+oranssi: #a44816
+vaalea vihreä: #dbe279
+background: #e5e3d7
+background2: #d3d0bc
+footer: #292d23
+form input bg: #e5e3d7
+form input border: #bab8aa
