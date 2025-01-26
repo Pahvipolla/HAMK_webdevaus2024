@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuva tekstillä ja gradientilla</title>
+    <style>
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 600px; /* Kuvan leveys */
+            height: 400px; /* Kuvan korkeus */
+            overflow: hidden; /* Varmistaa, että sisältö ei ylity */
+        }
+
+        .image-wrapper img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .image-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px; /* Gradientin korkeus */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+            pointer-events: none; /* Gradientti ei estä klikkauksia */
+        }
+
+        .image-wrapper .text-overlay {
+            position: absolute;
+            bottom: 0; /* Teksti gradientin kohdalle */
+            left: 0;
+            width: 100%;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            z-index: 1; /* Teksti gradientin yläpuolelle */
+            background: none; /* Ei taustaväriä, gradientti näkyy läpi */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-wrapper">
+        <img src="https://via.placeholder.com/600x400" alt="Esimerkkikuva">
+        <div class="text-overlay">Belgianpaimenkoira - Ystäväsi aina</div>
+    </div>
+</body>
+</html>

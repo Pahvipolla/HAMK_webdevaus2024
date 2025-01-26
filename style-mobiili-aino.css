@@ -1,0 +1,139 @@
+@media only screen and (max-width:1400px) {
+  .content {
+    width:100%;
+    padding:20px;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  
+  .etusivukuvakkeet {
+    gap:10px;
+}
+
+}
+
+@media only screen and (max-width: 850px) {
+    header {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(img/header-img-mobiili.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size:cover;
+        width:100%;
+        display:flex;
+        align-items:baseline;
+        justify-content:space-between;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        z-index: 5;
+        margin: 0; /* Poistaa mahdolliset marginaalit */
+        padding: 0; /* Poistaa mahdolliset sisennykset */
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .hamburger-menu {
+      position: fixed; /* Kiinnittää hamburger-ikonin ikkunan yläreunaan */
+      top: 10px; /* Etäisyys yläreunasta */
+      right: 10px; /* Etäisyys oikeasta reunasta */
+      z-index: 1000; /* Varmistaa, että ikoni on kaiken muun päällä */
+      font-size: 3rem; /* Suurempi koko ikonia varten */
+      background: none; /* Poistaa taustavärin */
+      border: none; /* Poistaa mahdolliset reunukset */
+      color: #dbe279;
+  }
+
+  footer .content1, footer .content2 {
+    width:100%;
+    padding:20px;
+    flex-direction:column-reverse;
+    text-align: center;
+    align-items: center;
+}
+
+  footer h1 {
+    text-align: center;
+    padding-bottom:5px;
+  }
+
+  footer .logo {
+    align-items:end;
+    justify-content: center;
+    padding-bottom:40px;
+  }
+
+  footer .content1 {
+    margin-bottom:10px;
+}
+
+        .content, .teksti {
+          width:100%;
+          padding:20px;
+        }
+
+
+}
+
+
+@media (max-width: 850px) {
+  nav ul {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+
+  nav ul.show {
+      display: flex;
+  }
+
+  .hamburger-menu {
+      display: block;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .etusivukuvakkeet {
+    flex-direction: column;
+  }
+
+  .pikkukuva {
+    max-height:350px;
+
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  footer .linkit ul {
+    flex-direction: column;
+}
+
+}
