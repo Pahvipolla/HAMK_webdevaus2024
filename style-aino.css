@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Saira+Condensed:wght@400;700&display=swap');
+
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e5e3d7;
+            font-family: 'Inter', sans-serif;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(img/header-img1.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:500px;
+            width:100%;
+            display:flex;
+            align-items:start;
+            justify-content: space-between;
+            z-index: 1;
+        }   
+
+        .logo img {
+            max-width:200px;
+            width:100%;
+            margin-top:30px;
+            margin-left:30px;
+            float:left;
+        }
+
+        nav {
+            position:relative;
+        }
+
+          .hamburger-menu {
+            display: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin:30px 30px 0px 0px;
+            padding:0;
+            display:flex;
+        }
+
+        nav ul li {
+            display:block;
+            margin: 0px 20px;
+        }
+
+        nav a {
+            color:#e5e3d7;
+            font-size:1.2rem;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition-duration: 350ms;
+        }
+
+        nav a:hover {
+            color:#dbe279;
+            border-bottom:3px solid #dbe279;
+            padding-bottom:10px;
+            transition-duration: 350ms;
+        }
+
+        section {
+            background-image:url(img/header-text-transition.png);
+            background-repeat: repeat-x;
+            margin-top:-340px;
+            padding-top:240px;
+            z-index: 2;
+            min-height:500px;
+        }
+
+        .content {
+            width:70%;
+            margin:0 auto;
+            font-size:1.2em;
+            line-height:2em;
+            text-shadow:0px 0px 2px rgba(0,0,0,0.2)
+        }
+
+        h2 {
+            color:#a44816;
+            font-family:"Saira Condensed", sans-serif;
+            text-transform: uppercase;
+            font-size:2.7rem;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-shadow: 2px 2px rgba(0,0,0,0.2);
+            margin:0;
+            padding:0;
+        }
+
+        .teksti {
+            width:70%;
+            text-align: center;
+            margin:0 auto;
+            padding-top:20px;
+            opacity:0.7;
+            letter-spacing:0.05em;
+            font-weight:500;
+        }
+
+        .etusivukuvakkeet {
+            display:flex;
+            max-width:100%;
+            justify-content: center;
+            gap:30px;
+            margin-top:30px;
+        }
+
+        .pikkukuva {
+            position:relative;
+            display:inline-block;
+            overflow: hidden;
+        }
+
+        .pikkukuva::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px; /* Gradientin korkeus */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Musta -> läpinäkyvä */
+            pointer-events: none; /* Estää gradientin vaikuttamisen käyttäjän klikkauksiin */
+        }
+
+        .pikkukuva-teksti {            
+            font-family:"Saira Condensed", sans-serif;
+            text-transform: uppercase;
+            font-size:2rem;
+            font-weight:800;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-shadow: 2px 2px rgba(0,0,0,0.2);
+            position: absolute;
+            bottom: 0; /* Teksti gradientin kohdalle */
+            width: 100%;
+            padding-bottom:20px;
+            z-index: 1; /* Teksti gradientin yläpuolelle */
+            background: none; /* Ei taustaväriä, gradientti näkyy läpi */
+        }
+
+        .pikkukuva a {
+            color:#e5e3d7;
+            text-decoration: none;
+        }
+
+        .pikkukuva img {
+            flex:1;
+            max-width:100%;
+            height:auto;
+            object-fit:cover;
+            display:block;
+            width:100%;
+            height:auto;
+        }        
+
+
+        footer a {
+            color:#dbe279;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        footer a:hover {
+            transition: 0.5s;
+            color:#e5e3d7;
+            text-decoration: underline;
+        }
+
+        footer .yla {
+            content:"";
+            margin-top:50px;
+            background-image:url(img/footer.png);
+            height:100px;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            width:100%;
+            background-size: cover;
+        }
+
+        footer .bg {
+            background-color: #292d23;
+            min-height:200px;
+        }
+
+        footer .content1, footer .content2 {
+            color:#e5e3d7;
+            width:70%;
+            margin:auto;
+            display: flex;
+            justify-content: space-between;
+            align-content: stretch;
+        }
+
+        footer .content1 {
+            align-items: stretch;
+            margin-bottom:50px;
+            padding-top:20px;
+        }
+
+        footer .content2 {
+            align-items: flex-end;
+        }
+
+        footer h1 {
+            color:#dbe279;
+            font-size:1.5em;
+            text-shadow: none;
+            letter-spacing: 0.2em;
+            text-align: left;
+            padding-bottom:20px;
+        }
+
+        footer img.logo {
+            max-width:200px;
+            width:100%;
+        }
+
+        footer .asiakaspalvelu, footer .logo {
+            line-height:1.5em;
+        }
+
+        footer .linkit ul, footer .some-linkit ul {
+            list-style: none;
+            padding:0;
+            display:flex;
+            flex-direction: row;
+            gap:30px;
+            margin-bottom:50px;
+        }
+
+        footer .linkit a {
+            text-decoration: none;
+            transition-duration: 350ms;
+        }
+
+        footer img.some {
+            height:70px;
+            transition:0.7s;
+        }
+
+        footer img.some:hover {
+            transition:0.7s;
+            opacity:0.6;
+        }
