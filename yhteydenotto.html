@@ -39,8 +39,34 @@
     <section>
         <div class="content">
             <!-- SIVUN PÄÄOTSIKKO -->
-            <h2>OTSIKKO</h2>
+            <h2>Yhteydenotto</h2>
 
+<form id="contactForm">
+    <p><span class="required">*</span> Merkityt kentät ovat pakollisia.</p>
+
+    <label for="name">Nimi: <span class="required">*</span></label>
+    <input type="text" id="name" name="name" placeholder="Kirjoita nimesi" required><br>
+
+    <label for="email">Sähköposti: <span class="required">*</span></label>
+    <input type="email" id="email" name="email" placeholder="esimerkki@osoite.com" required><br>
+
+    <label for="phone">Puhelinnumero:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+358 40 123 4567"><br>
+
+    <label for="subject">Aihe: <span class="required">*</span></label>
+    <input type="text" id="subject" name="subject" placeholder="Kirjoita viestin aihe" required><br>
+
+    <label for="message">Viesti: <span class="required">*</span></label>
+    <textarea id="message" name="message" placeholder="Kirjoita viestisi tähän" required rows="10" required></textarea><br>
+
+    <button type="button" onclick="showMessage()">Lähetä viesti</button>
+</form>
+
+<script>
+function showMessage() {
+    alert("Yhteydenottolomake on vielä kehitysasteella, eli valitettavasty viestiäsi ei lähetetty.");
+}
+</script>
 <!-- sisältö -->
 
         </div>
