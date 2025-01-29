@@ -9,52 +9,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<!-- HEADER SISÄLTÖ ALKAA -->
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/logo-vihreä.png" alt="Yrityksen logo"></a>
+            <a href="index.html"><img src="img/logo-valkoinen.png" alt="Yrityksen logo"></a>
         </div>
 
+        <!-- NAVIGAATTORI -->
         <nav>
             <button class="hamburger-menu" aria-label="Toggle menu">
-                &#9776; <!-- Unicode-hahmo hamburger-menua varten -->
+                &#9776;
             </button>
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
                 <li><a href="tuotteet.html">Tuotteet</a></li>
                 <li><a href="esittely.html">Esittely</a></li>
                 <li><a href="yhteydenotto.html">Yhteydenotto</a></li>
+                <li class="hide"><a href="#"><img src="img/fb-vihreä.png" alt="Facebook-logo"></a></li>
+                <li class="hide"><a href="#"><img src="img/ig-vihreä.png" alt="Instagram-logo"></a></li>
             </ul>
         </nav>
         
     </header>
+<!-- HEADER LOPPUU -->
 
+
+<!-- SISÄLTÖ ALKAA -->
     <section>
         <div class="content">
+            <!-- SIVUN PÄÄOTSIKKO -->
             <h2>Täyttä vauhtia yhdessä</h2>
 
-            <p class="teksti">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ipsam nihil accusamus error distinctio temporibus officia officiis.</p>
-
-            <!-- <p>Est sequi architecto, distinctio iusto repudiandae molestiae officia deleniti asperiores laudantium magni, modi in! Facere assumenda sint debitis voluptatum porro eius architecto beatae illo! Cum facere laboriosam distinctio nulla. Recusandae.</p> -->
+            <p class="teksti">Est sequi architecto, distinctio iusto repudiandae molestiae officia deleniti asperiores laudantium magni, modi in! Facere assumenda sint debitis voluptatum porro eius architecto beatae illo! Cum facere laboriosam distinctio nulla. Recusandae.</p>
 
             <div class="etusivukuvakkeet">
                 <div class="pikkukuva">
-                    <a href="#"><img src="img/etusivu-kuva1.jpg" alt="Harrastustarvikkeet">
+                    <a href="tuotteet.html"><img src="img/etusivu-kuva1.jpg" alt="Harrastustarvikkeet">
                     <div class="pikkukuva-teksti">Harrastuksiin</div></a>
                 </div>
                 <div class="pikkukuva">
-                    <a href="#"><img src="img/etusivu-kuva2.jpg" alt="Ulkoiluvälineet">
+                    <a href="tuotteet.html"><img src="img/etusivu-kuva2.jpg" alt="Ulkoiluvälineet">
                         <div class="pikkukuva-teksti">Ulkoiluun</div></a>
                 </div>
                 <div class="pikkukuva">
-                    <a href="#"><img src="img/etusivu-kuva3.jpg" alt="Ruokinta">
+                    <a href="tuotteet.html"><img src="img/etusivu-kuva3.jpg" alt="Ruokinta">
                         <div class="pikkukuva-teksti">Ruokintaan</div></a>
                 </div>
             </div>
         </div>
     </section>
+<!-- SISÄLTÖ LOPPUU -->
 
 
-
+<!-- ALAPALKKI ALKAA -->
     <footer>
         <div class="yla"></div>
 
@@ -91,16 +99,17 @@
             </div>
         </div>
     </footer>
+<!-- ALAPALKKI LOPPUU -->
 
-    <script>
+
+<script>
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navMenu = document.querySelector('nav ul');
 
 hamburgerMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show'); // Lisää/poistaa "show"-luokan
+    navMenu.classList.toggle('show');
 });
-
-    </script>
+</script>
     
 </body>
 </html>

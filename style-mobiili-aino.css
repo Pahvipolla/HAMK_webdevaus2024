@@ -3,6 +3,9 @@
     width:100%;
     padding:20px;
   }
+  .content-full h3 {
+    margin-top:-35px;
+}
 }
 
 @media only screen and (max-width:1000px) {
@@ -11,11 +14,15 @@
     gap:10px;
 }
 
+    .content-full h3 {
+      text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 850px) {
     header {
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(img/header-img-mobiili.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(img/header-img-mobiili2.jpg);
         background-position: center top;
         background-repeat: no-repeat;
         background-size:cover;
@@ -39,8 +46,8 @@
         align-items: center;
         gap: 20px;
         z-index: 5;
-        margin: 0; /* Poistaa mahdolliset marginaalit */
-        padding: 0; /* Poistaa mahdolliset sisennykset */
+        margin: 0;
+        padding: 0;
     }
 
     nav ul.show {
@@ -49,17 +56,26 @@
 
     nav ul li {
         margin: 0;
+        padding:20px;
     }
 
     .hamburger-menu {
-      position: fixed; /* Kiinnittää hamburger-ikonin ikkunan yläreunaan */
-      top: 10px; /* Etäisyys yläreunasta */
-      right: 10px; /* Etäisyys oikeasta reunasta */
-      z-index: 1000; /* Varmistaa, että ikoni on kaiken muun päällä */
-      font-size: 3rem; /* Suurempi koko ikonia varten */
-      background: none; /* Poistaa taustavärin */
-      border: none; /* Poistaa mahdolliset reunukset */
-      color: #dbe279;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+      font-size: 3rem;
+      background:none;
+      border: none;
+      color: #e5e3d7;
+  }
+
+  .hide {
+    display:block;
+  }
+
+  .hide img {
+    height:50px;
   }
 
   footer .content1, footer .content2 {
@@ -90,7 +106,13 @@
           padding:20px;
         }
 
+        .tuotekuvakkeet {
+          justify-content:center;
+      }
 
+      .tuotekuva {
+        flex:calc(100% / 2 - 30px); /* 3 kuvaa per rivi, miinustetaan gap */
+    }
 }
 
 
@@ -134,6 +156,10 @@
 @media only screen and (max-width: 550px) {
   footer .linkit ul {
     flex-direction: column;
+}
+
+.tuotekuva {
+  flex:calc(100% / 1 - 30px); /* 3 kuvaa per rivi, miinustetaan gap */
 }
 
 }

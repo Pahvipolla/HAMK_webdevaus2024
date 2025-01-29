@@ -1,12 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nothing to see here yet.</title>
+    <link rel="stylesheet" href="style-aino.css">
+    <link rel="stylesheet" href="style-mobiili-aino.css">
+    <title>RUNWILD - Täyttä vauhtia yhdessä</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Placeholder web-page.</h1>
-    <p>Nothing to see here yet.</p>
+
+<!-- HEADER SISÄLTÖ ALKAA -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-valkoinen.png" alt="Yrityksen logo"></a>
+        </div>
+
+        <!-- NAVIGAATTORI -->
+        <nav>
+            <button class="hamburger-menu" aria-label="Toggle menu">
+                &#9776;
+            </button>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="tuotteet.html">Tuotteet</a></li>
+                <li><a href="esittely.html">Esittely</a></li>
+                <li><a href="yhteydenotto.html">Yhteydenotto</a></li>
+                <li class="hide"><a href="#"><img src="img/fb-vihreä.png" alt="Facebook-logo"></a></li>
+                <li class="hide"><a href="#"><img src="img/ig-vihreä.png" alt="Instagram-logo"></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+<!-- HEADER LOPPUU -->
+
+
+<!-- SISÄLTÖ ALKAA -->
+    <section>
+        <div class="content">
+            <!-- SIVUN PÄÄOTSIKKO -->
+            <h2>Täyttä vauhtia yhdessä</h2>
+
+            <p class="teksti">Est sequi architecto, distinctio iusto repudiandae molestiae officia deleniti asperiores laudantium magni, modi in! Facere assumenda sint debitis voluptatum porro eius architecto beatae illo! Cum facere laboriosam distinctio nulla. Recusandae.</p>
+
+            <div class="etusivukuvakkeet">
+                <div class="pikkukuva">
+                    <a href="tuotteet.html"><img src="img/etusivu-kuva1.jpg" alt="Harrastustarvikkeet">
+                    <div class="pikkukuva-teksti">Harrastuksiin</div></a>
+                </div>
+                <div class="pikkukuva">
+                    <a href="tuotteet.html"><img src="img/etusivu-kuva2.jpg" alt="Ulkoiluvälineet">
+                        <div class="pikkukuva-teksti">Ulkoiluun</div></a>
+                </div>
+                <div class="pikkukuva">
+                    <a href="tuotteet.html"><img src="img/etusivu-kuva3.jpg" alt="Ruokinta">
+                        <div class="pikkukuva-teksti">Ruokintaan</div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SISÄLTÖ LOPPUU -->
+
+
+<!-- ALAPALKKI ALKAA -->
+    <footer>
+        <div class="yla"></div>
+
+        <div class="bg">
+            <div class="content1">
+                <div class="asiakaspalvelu">
+                    <h1>Asiakaspalvelu</h1>
+                    <p><a href="mailto:asiakaspalvelu@runwild.com">asiakaspalvelu@runwild.com</a><br>
+                        Puhelinnumero: 040 123 4567<br>
+                        Arkisin klo 9:00 - 17:00</p>
+                </div>
+        
+                <div class="logo">
+                    <img src="img/logo-vihreä.png" alt="Logo">
+                </div>
+
+            </div>
+            <div class="content2">
+                <div class="linkit">
+                    <ul>
+                        <li class="link"><a href="#">Toimitusehdot</a></li>
+                        <li class="link"><a href="#">Toimitus- ja maksutavat</a></li>
+                        <li class="link"><a href="#">Tietosuojaseloste</a></li>
+                        <li class="link"><a href="#">Evästeet</a></li>
+                    </ul>
+                </div>
+        
+                <div class="some-linkit">
+                    <ul>
+                        <li><a href="#"><img src="img/fb-vihreä.png" alt="Instagram-logo" class="some"></a></li>
+                        <li><a href="#"><img src="img/ig-vihreä.png" alt="Instagram-logo" class="some"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- ALAPALKKI LOPPUU -->
+
+
+<script>
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('nav ul');
+
+hamburgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+</script>
+    
 </body>
 </html>

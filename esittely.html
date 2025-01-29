@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-aino.css">
+    <link rel="stylesheet" href="style-mobiili-aino.css">
+    <title>RUNWILD - Täyttä vauhtia yhdessä</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- HEADER SISÄLTÖ ALKAA -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-valkoinen.png" alt="Yrityksen logo"></a>
+        </div>
+
+        <!-- NAVIGAATTORI -->
+        <nav>
+            <button class="hamburger-menu" aria-label="Toggle menu">
+                &#9776;
+            </button>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="tuotteet.html">Tuotteet</a></li>
+                <li><a href="esittely.html">Esittely</a></li>
+                <li><a href="yhteydenotto.html">Yhteydenotto</a></li>
+                <li class="hide"><a href="#"><img src="img/fb-vihreä.png" alt="Facebook-logo"></a></li>
+                <li class="hide"><a href="#"><img src="img/ig-vihreä.png" alt="Instagram-logo"></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+<!-- HEADER LOPPUU -->
+
+
+<!-- SISÄLTÖ ALKAA -->
+    <section>
+        <div class="content">
+            <!-- SIVUN PÄÄOTSIKKO -->
+            <h2>OTSIKKO</h2>
+        </div>
+
+        <div class="content-full">
+            <div class="content">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis doloremque quae quam accusamus quaerat sapiente architecto ea sed iste quo magni veniam quos voluptatibus, odio non in at debitis cum.</p>
+            <p>Voluptatum labore necessitatibus debitis, pariatur cupiditate iure a, nostrum asperiores ab optio nesciunt quaerat reiciendis nisi perferendis aspernatur facilis tempora amet officiis ea, aliquid laboriosam officia harum qui! Repudiandae, exercitationem?</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolor, magnam, quisquam earum dicta dignissimos iste eveniet quibusdam ipsa nulla atque illum aliquid molestias numquam. Vitae ipsa beatae totam optio?</p>
+            <p>Doloribus repellat voluptatum dolor modi labore laboriosam quidem consectetur possimus perspiciatis, a dolorum, quo veritatis ullam dolore aliquam velit reprehenderit! Facere, voluptatem minima? A, vel debitis sed recusandae odit itaque!</p>
+            <p>Quia unde quae maxime voluptate eligendi nostrum nobis eius eos maiores, soluta, iure aut blanditiis veniam rerum, eveniet totam voluptates quo. Repellat minus, dignissimos nobis nostrum aut esse tempore laboriosam?</p>
+        </div>
+
+
+<!-- sisältö -->
+
+        </div>
+    </section>
+<!-- SISÄLTÖ LOPPUU -->
+
+
+<!-- ALAPALKKI ALKAA -->
+    <footer>
+        <div class="yla"></div>
+
+        <div class="bg">
+            <div class="content1">
+                <div class="asiakaspalvelu">
+                    <h1>Asiakaspalvelu</h1>
+                    <p><a href="mailto:asiakaspalvelu@runwild.com">asiakaspalvelu@runwild.com</a><br>
+                        Puhelinnumero: 040 123 4567<br>
+                        Arkisin klo 9:00 - 17:00</p>
+                </div>
+        
+                <div class="logo">
+                    <img src="img/logo-vihreä.png" alt="Logo">
+                </div>
+
+            </div>
+            <div class="content2">
+                <div class="linkit">
+                    <ul>
+                        <li class="link"><a href="#">Toimitusehdot</a></li>
+                        <li class="link"><a href="#">Toimitus- ja maksutavat</a></li>
+                        <li class="link"><a href="#">Tietosuojaseloste</a></li>
+                        <li class="link"><a href="#">Evästeet</a></li>
+                    </ul>
+                </div>
+        
+                <div class="some-linkit">
+                    <ul>
+                        <li><a href="#"><img src="img/fb-vihreä.png" alt="Instagram-logo" class="some"></a></li>
+                        <li><a href="#"><img src="img/ig-vihreä.png" alt="Instagram-logo" class="some"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- ALAPALKKI LOPPUU -->
+
+
+<script>
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('nav ul');
+
+hamburgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+</script>
+    
+</body>
+</html>
