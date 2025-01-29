@@ -130,6 +130,11 @@
             font-weight:500;
         }
 
+        .teksti strong {
+            color:#a44816;
+            font-size:105%;
+        }
+
         .etusivukuvakkeet {
             display:flex;
             max-width:100%;
