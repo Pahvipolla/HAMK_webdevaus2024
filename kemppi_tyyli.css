@@ -1,0 +1,188 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #292d23;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+}
+
+main {
+    margin-top: 30px; /* Avoid overlap with sticky header */
+}
+
+.bg-light {
+    background-color: #292d23 !important; /* Overrides the default light background */
+}
+
+nav a {
+    color: #dbe279;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition-duration: 350ms;
+}
+
+footer a {
+    color: #dbe279;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: #e5e3d7;
+    text-decoration: underline;
+}
+
+footer .yla {
+    content: "";
+    margin-top: 0px;
+    background-image: url(img_kemppi/footer.png);
+    height: 100px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+footer .bg {
+    background-color: #292d23;
+    min-height: auto;
+}
+
+footer .content1, 
+footer .content2 {
+    color: #e5e3d7;
+    margin-bottom: 0px;
+}
+
+footer h1 {
+    color: #dbe279;
+    font-size: 1.5em;
+    text-shadow: none;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+footer img.some {
+    height: 70px;
+    transition: 0.7s;
+}
+
+footer img.some:hover {
+    opacity: 0.6;
+}
+
+.some-linkit ul {
+    gap: 25px; /* Adds space between FB and IG logos */
+}
+
+.fit-to-screen {
+    width: 100%; /* Makes the image span the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures proper spacing */
+}
+
+.navbar-light .nav-link {
+    color: #dbe279 !important; /* Set font color */
+}
+
+.navbar-light .nav-link:hover,
+.navbar-light .nav-link:focus {
+    color: #e5e3d7 !important; /* Optional hover color */
+}
+
+.content {
+    width:70%;
+    margin:0 auto;
+    font-size:1.2em;
+    line-height:2em;
+    text-shadow:0px 0px 2px rgba(0,0,0,0.2)
+}
+
+h2 {
+    color:#a44816;
+    font-family:"Saira Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size:2.7rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+    margin:0;
+    padding:0;
+}
+
+.teksti {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    border-color: #dbe279; /* Match the border color to the text color */
+    background-color: transparent; /* Transparent background */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23dbe279' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.etusivukuvakkeet {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.pikkukuva {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.pikkukuva::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Gradient height */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Black to transparent */
+    pointer-events: none; /* Prevent gradient from affecting user clicks */
+}
+
+.pikkukuva-teksti {            
+    font-family: "Saira Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: calc(1vw + 0.5vh); /* Dynamically scale text size based on viewport */
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0; /* Position text at the bottom */
+    width: 100%;
+    padding-bottom: 2%; /* Use percentage for consistent scaling */
+    z-index: 1; /* Ensure text is above the gradient */
+    background: none; /* Transparent background */
+}
+
+.pikkukuva a {
+    color: #e5e3d7;
+    text-decoration: none;
+}
+
+.pikkukuva img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
