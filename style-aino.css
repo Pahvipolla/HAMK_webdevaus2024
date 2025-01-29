@@ -7,16 +7,17 @@
         }
 
         body {
-            background-color: #e5e3d7;
+            background-color: #e2e4e7;
             font-family: 'Inter', sans-serif;
+            color:#221814;
         }
 
         header {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(img/header-img1.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(img/header-img-mobiili2.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-            height:500px;
+            height:700px;
             width:100%;
             display:flex;
             align-items:start;
@@ -36,7 +37,7 @@
             position:relative;
         }
 
-          .hamburger-menu {
+          .hamburger-menu, .hide {
             display: none;
         }
 
@@ -79,11 +80,21 @@
         .content {
             width:70%;
             margin:0 auto;
-            font-size:1.2em;
+            font-size:1.1em;
             line-height:2em;
-            text-shadow:0px 0px 2px rgba(0,0,0,0.2)
+            text-shadow:0px 0px 2px rgba(0,0,0,0.2);
         }
 
+        .content-full, .content-full-tuotteet {
+            width:100%;
+            background:#ccd1d8;
+        }
+
+        .content-full-tuotteet {
+            margin:50px 0px 0px 0px;
+        }
+
+        
         h2 {
             color:#a44816;
             font-family:"Saira Condensed", sans-serif;
@@ -93,14 +104,27 @@
             letter-spacing: 0.1em;
             text-shadow: 2px 2px rgba(0,0,0,0.2);
             margin:0;
-            padding:0;
+            padding-bottom:20px;
+        }
+
+        h3 {
+            font-family:'Saira Condensed', sans-serif;
+            text-transform: uppercase;
+            font-size:2.3em;
+            color:#2d3336;
+        }
+
+        .content-full h3,
+        .content-full-tuotteet h3 {
+            margin-top:-20px;
+            position:absolute;
+            padding-bottom:30px;
         }
 
         .teksti {
             width:70%;
             text-align: center;
             margin:0 auto;
-            padding-top:20px;
             opacity:0.7;
             letter-spacing:0.05em;
             font-weight:500;
@@ -126,9 +150,9 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 100px; /* Gradientin korkeus */
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Musta -> läpinäkyvä */
-            pointer-events: none; /* Estää gradientin vaikuttamisen käyttäjän klikkauksiin */
+            height: 100px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+            pointer-events: none;
         }
 
         .pikkukuva-teksti {            
@@ -140,11 +164,11 @@
             letter-spacing: 0.1em;
             text-shadow: 2px 2px rgba(0,0,0,0.2);
             position: absolute;
-            bottom: 0; /* Teksti gradientin kohdalle */
+            bottom: 0;
             width: 100%;
             padding-bottom:20px;
-            z-index: 1; /* Teksti gradientin yläpuolelle */
-            background: none; /* Ei taustaväriä, gradientti näkyy läpi */
+            z-index: 1;
+            background: none;
         }
 
         .pikkukuva a {
@@ -279,3 +303,73 @@
             transition:0.7s;
             opacity:0.6;
         }
+
+
+        .tuotekuvakkeet {
+            display:flex;
+            flex-wrap: wrap;
+            max-width:100%;
+            justify-content:baseline;
+            position:inherit;
+            gap:30px;
+            padding:70px 0px;
+        }
+
+        .tuotekuva {
+            display:inline-block;
+            overflow: hidden;
+            flex:calc(100% / 4 - 30px); /* 3 kuvaa per rivi, miinustetaan gap */
+        }        
+
+        .tuotekuva img {
+            height:auto;
+            object-fit:cover;
+            display:block;
+            width:100%;
+            border-radius:10px;
+        }       
+
+        .tuotekuva-teksti {            
+            font-size:120%;
+            text-align: left;
+            line-height:2rem;
+            width: 100%;
+            padding-top:10px;
+        }
+
+        .tuotekuva strong {
+            text-transform: uppercase;
+            letter-spacing:0.3rem;
+        }
+
+        .tuotekuva .hinta {
+            color:#a44816;
+            font-weight:700;
+            font-size:110%;
+            line-height:3rem;
+        }
+
+        .tuotekuva .tuotenappi {
+            clear:both;
+            display:inline-block;
+            border:0;
+            border-radius:10px;
+            padding:8px 17px;
+            font-size:80%;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-weight:700;
+            background-color: #2d3336;
+            color:#e2e4e7;
+            transition-duration:350ms;
+        }
+
+        .tuotekuva .tuotenappi:hover {
+            transition-duration:350ms;
+            background-color:#a44816
+        }
+
+        .tuotekuva a {
+            color:#e5e3d7;
+            text-decoration: none;
+        } 
