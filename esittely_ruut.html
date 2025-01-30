@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,62 +9,59 @@
     <title>RUNWILD - Täyttä vauhtia yhdessä</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
-<!-- HEADER SISÄLTÖ ALKAA -->
+<body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/logo-valkoinen.png" alt="Yrityksen logo"></a>
+            <a href="index.html"><img src="img/logo-vihreä.png" alt="Yrityksen logo"></a>
         </div>
 
-        <!-- NAVIGAATTORI -->
         <nav>
             <button class="hamburger-menu" aria-label="Toggle menu">
-                &#9776;
+                &#9776; <!-- Unicode-hahmo hamburger-menua varten -->
             </button>
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
                 <li><a href="tuotteet.html">Tuotteet</a></li>
                 <li><a href="esittely.html">Esittely</a></li>
                 <li><a href="yhteydenotto.html">Yhteydenotto</a></li>
-                <li class="hide"><a href="#"><img src="img/fb-vihreä.png" alt="Facebook-logo"></a></li>
-                <li class="hide"><a href="#"><img src="img/ig-vihreä.png" alt="Instagram-logo"></a></li>
             </ul>
         </nav>
-        
+
     </header>
-<!-- HEADER LOPPUU -->
 
-
-<!-- SISÄLTÖ ALKAA -->
     <section>
-        <div class="content">
-            <!-- SIVUN PÄÄOTSIKKO -->
-            <h2>OTSIKKO</h2>
-        </div>
+        <div class="esittely">
+            <h2>Yrityksen esittely</h2>
+            <div class="esittely-container">
+                <div class="esittelykuva">
+                    <img src="img/esittely.jpg" alt="Koira ja ihminen">
+                </div>
+                <div class="esittelyteksti">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa doloribus, vel sequi voluptatibus
+                        tempora dicta nobis eveniet id beatae voluptatem. Temporibus omnis, earum incidunt deserunt
+                        recusandae enim cum natus expedita. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Optio ipsum placeat officia. Recusandae saepe quia expedita cupiditate. Quidem, harum iusto eius
+                        odio, officia atque cumque fugiat non excepturi, voluptatem quae? Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Exercitationem incidunt non quidem tempore aliquam fugit, velit
+                        pariatur optio beatae cupiditate quisquam similique laboriosam architecto rem, dolorum eum atque
+                        recusandae repellendus!</p>
+                </div>
+                <p>
 
-        <div class="content-full">
-            <div class="content">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis doloremque quae quam accusamus quaerat sapiente architecto ea sed iste quo magni veniam quos voluptatibus, odio non in at debitis cum.</p>
-            <p>Voluptatum labore necessitatibus debitis, pariatur cupiditate iure a, nostrum asperiores ab optio nesciunt quaerat reiciendis nisi perferendis aspernatur facilis tempora amet officiis ea, aliquid laboriosam officia harum qui! Repudiandae, exercitationem?</p>
             </div>
-        </div>
-
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolor, magnam, quisquam earum dicta dignissimos iste eveniet quibusdam ipsa nulla atque illum aliquid molestias numquam. Vitae ipsa beatae totam optio?</p>
-            <p>Doloribus repellat voluptatum dolor modi labore laboriosam quidem consectetur possimus perspiciatis, a dolorum, quo veritatis ullam dolore aliquam velit reprehenderit! Facere, voluptatem minima? A, vel debitis sed recusandae odit itaque!</p>
-            <p>Quia unde quae maxime voluptate eligendi nostrum nobis eius eos maiores, soluta, iure aut blanditiis veniam rerum, eveniet totam voluptates quo. Repellat minus, dignissimos nobis nostrum aut esse tempore laboriosam?</p>
-        </div>
-
-
-<!-- sisältö -->
-
+            <h3>Toimitusehdot</h3>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quia porro debitis sequi itaque
+                natus perspiciatis qui maiores voluptatibus similique consectetur facere ipsum, eum veniam
+                voluptatem distinctio veritatis officiis reiciendis?Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Placeat optio cupiditate aut cum nihil, quod, voluptatem eaque aliquam esse
+                impedit voluptate atque nostrum velit? Qui provident quam facilis perspiciatis doloremque.</p>
         </div>
     </section>
-<!-- SISÄLTÖ LOPPUU -->
 
 
-<!-- ALAPALKKI ALKAA -->
+
     <footer>
         <div class="yla"></div>
 
@@ -75,7 +73,7 @@
                         Puhelinnumero: 040 123 4567<br>
                         Arkisin klo 9:00 - 17:00</p>
                 </div>
-        
+
                 <div class="logo">
                     <img src="img/logo-vihreä.png" alt="Logo">
                 </div>
@@ -89,7 +87,7 @@
                         <li class="link"><a href="#">Evästeet</a></li>
                     </ul>
                 </div>
-        
+
                 <div class="some-linkit">
                     <ul>
                         <li><a href="#"><img src="img/fb-vihreä.png" alt="Instagram-logo" class="some"></a></li>
@@ -99,17 +97,17 @@
             </div>
         </div>
     </footer>
-<!-- ALAPALKKI LOPPUU -->
 
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navMenu = document.querySelector('nav ul');
 
-<script>
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navMenu = document.querySelector('nav ul');
+        hamburgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('show'); // Lisää/poistaa "show"-luokan
+        });
 
-hamburgerMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-});
-</script>
-    
+    </script>
+
 </body>
+
 </html>
